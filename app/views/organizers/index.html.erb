@@ -33,7 +33,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="container">
-        <h2>Create an Event</h2>
+        <h2>Need <span id="meal">lunch</span> for <span id="number">80</span> on <span id="day">Friday</span>? Done.</h2>
         
         <div class="placard alpha">
                 <h1>a simple 3 step guide to creating an event</h1>
@@ -112,16 +112,47 @@
 
 
 
-<div id="fbcomments">
+<div id="menu-footer">
+            <div class="container">
+            <ul>
+                <li><a href="restaurants.html">FOR RESTAURANTS</a> /</li>
+                <li><a href="companies.html" class="active">FOR COMPANIES</a> /</li></a>
+                <li><a href="nonprofits.html">FOR NON-PROFITS</a> /</li>
+                <li><a href="organizers.html" class="active">EVENT ORGANIZERS</a> /</li>
+                <li><a href="students.html">FOR STUDENTS</a> /</li>
+                <li><a href="socialbutterflies.html">SOCIAL BUTTERFLIES</a></li>
+            </ul>
+            </div>
+         </div>
+
+
+
+<div id="footer">
     <div class="container">
-        <h4>Unanswered question? Email ut as <a href="mailto:hey@foodcircles.net" class="mailus">hey@foodcircles.net</a> or comment below.</h4>
-    </div>
-    <div class="container">
-        <div class="fb-container">
-            <div class="fb-comments" data-href="http://www.foodcircles.net/faq" data-width="784" data-num-posts="10"></div>
+        <div class="footer-summary">
+            <p><strong>FoodCircles</strong> curates the best local restaurants and offers appetizers/deserts starting at $1. <strong>All</strong> of your purchase is donated to put food on the table for hungry children</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2013 FoodCircles, LLC<br />
+            <img src="img/secure.png" alt="Secure Lock"><strong>SECURE - PAYMENTS PROCESSED BY PAYPAL</strong></p>
+        </div>
+        <div class="quicklinks">
+            <ul id="quicklinks-links">
+                <li><a href="#">Terms &amp; Privacy</a></li>
+                <li><a href="#">About We</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul id="quicklinks-social">
+                <li><a href=""><img src="img/foodcircles-little.png" alt=""></a></li>
+                <li><a href=""><img src="img/facebook-little.png" alt=""></a></li>
+                <li><a href=""><img src="img/twitter-little.png" alt=""></a></li>
+                <li><a href=""><img src="img/apple-little.png" alt=""></a></li>
+                <li><a href=""><img src="img/google-little.png" alt=""></a></li>
+            </ul>
         </div>
     </div>
 </div>
+
     
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
@@ -157,5 +188,58 @@ $('.teampick a').on('click', function(e) {
     
 });
 </script>
+
+
+<script type="text/javascript">
+    (function(){
+    var words = [
+        'breakfast',
+        "hors d'oeuvres",
+        'lunch',
+        'dessert'
+        ], i = 0;
+    setInterval(function(){
+        $('#meal').fadeOut(function(){
+            $(this).html(words[i=(i+1)%words.length]).fadeIn();
+        });
+    }, 4000);
+        
+})();
+    </script>
+
+    <script type="text/javascript">
+    (function(){
+    var words = [
+        '5',
+        '100',
+        '25',
+        '67'
+        ], i = 0;
+    setInterval(function(){
+        $('#number').fadeOut(function(){
+            $(this).html(words[i=(i+1)%words.length]).fadeIn();
+        });
+    }, 5000);
+        
+})();
+    </script>
+
+    <script type="text/javascript">
+   (function(){
+    var words = [
+        'Monday',
+        'Saturday',
+        'Thursday',
+        'Sunday'
+        ], i = 0;
+    setInterval(function(){
+        $('#day').fadeOut(function(){
+            $(this).html(words[i=(i+1)%words.length]).fadeIn();
+        });
+    }, 6000);
+        
+})();
+    </script>
+
 </body>
 </html>
