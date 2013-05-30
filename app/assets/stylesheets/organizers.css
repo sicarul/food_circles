@@ -1,3 +1,7 @@
+h1 {
+	color: #4e3e34;
+}
+
 .placard {
 	width: 100%;
 	background-color: white;
@@ -11,7 +15,7 @@
 	display: block;
 	padding: 0 0 40px 0;
 	color: #4e3e34;
-	font-family: "museo-slab", sans-serif;
+	font-family: "museo-slab", serif;
 }
 
 .placard-body {
@@ -21,9 +25,34 @@
 
 .placard h1 {
 	font-size: 24px;
-	font-family: serif;
+	font-family: "museo-slab", serif;
+	font-weight: 700;
 	position: relative;
 	margin-bottom: 30px;
+}
+
+.placard h2 {
+	font-size: 20px;
+}
+
+.placard p {
+	font-family: "pragmatica-web", sans-serif;
+}
+
+.organizers-arrow {
+	position: relative;
+	
+	top: -50px;
+	left: 60px;
+}
+
+.image-alpha {
+	position: relative;
+	left: 30px;
+}
+
+.organizers-steps {
+	width: 150px;
 }
 
 .stringleft{
@@ -39,7 +68,7 @@
 
 .omega {
 	margin-bottom: 100px;
-	padding-bottom: 0;
+	padding-bottom: 100px;
 }
 
 .steps {
@@ -107,8 +136,6 @@
 	text-align: left;
 	padding: 0 60px 0 60px;
 	margin-top: 40px;
-	padding-bottom: 40px;
-	vertical-align: middle;
 }
 
 #organizers h2 {
@@ -116,11 +143,14 @@
 	margin-bottom: 0;
 	font-size: 18px;
 	font-weight: 700;
+	margin-top: 10px;
+	font-family: "museo-slab", serif;
 }
 
 #organizers p {
 	font-size: 16px;
 	font-weight: 200;
+	font-family: "pragmatica-web", sans-serif;
 }
 
 label {
@@ -128,5 +158,141 @@ label {
 }
 
 #organizers input {
-	vetical-align: middle;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "pragmatica-web", sans-serif;
+}
+
+#organizers .submit-image {
+	margin: 10px 0 10px 0;
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+	padding: 10px 50px;
+	border-radius: 8px;
+	background-color: #b46c6d;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b46c6d), to(#a44b4c));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #b46c6d, #a44b4c);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #b46c6d, #a44b4c);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #b46c6d, #a44b4c);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #b46c6d, #a44b4c);
+}
+
+#organizers .submit-image:hover {
+	background-color: #6c1b1b;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6c1b1b), to(#894242));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #6c1b1b, #894242);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #6c1b1b, #894242);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #6c1b1b, #894242);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #6c1b1b, #894242);
+
+}
+
+.responses {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.responses p {
+	line-height: 30px;
+	color: #8a857f;
+}
+
+#menu-footer {
+	background: url("../img/footer-menu-background.png") no-repeat center;
+	height: 70px;
+	box-shadow: 
+        
+    0px -11px 18px -10px #CCC;
+
+}
+
+#menu-footer ul li {
+	list-style: none;
+	display: inline;
+	position: relative;
+	top: 25px;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+#footer p {
+	padding-top: 20px;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+#footer ul li {
+	list-style: none;
+	display: inline;
+}
+
+.footer-summary {
+	float: left;
+	text-align: left;
+	width: 300px;
+	padding: 0 10px;
+}
+
+.copyright {
+	display: inline-block;
+	float: left;
+	width: 300px;
+	text-align: center;
+	padding: 0 10px;
+}
+
+.copyright p {
+	vertical-align: middle;
+	line-height: 45px;
+	font-family: "Pragmatica Web", sans-serif;
+}
+
+.copyright img {
+	position: relative;
+	top: 3px;
+}
+
+.quicklinks {
+	float: left;
+	width: 300px;
+	padding: 0 10px;
+}
+
+.quicklinks a {
+	color: #999;
+}
+
+.quicklinks ul {
+	height: 40px;
+	line-height: 45px;
+}
+
+#quicklinks-social {
+	margin-bottom: 50px;
+
+}
+
+#quicklinks-links a {
+	font-size: 12px;
 }
