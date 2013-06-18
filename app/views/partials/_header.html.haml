@@ -13,12 +13,12 @@
           %a{class: "icon-soc-twitter", href: "https://twitter.com/#!/FoodCircles"}
           %a{class: "icon-soc-foodcircles", href: "http://blog.foodcircles.net"}
 
-      .welcome-line
-        Welcome Back!
-        %a{href: "#"}
-          Your Account
+      - if current_user
+        .welcome-line
+          Welcome Back!
+          = link_to "Your Account", edit_user_registration_path
           %i{class: "arrow-right"}
-        / = link_to('Logout', main_app.destroy_user_session_path, :method => :delete) if current_user
+          / = link_to('Logout', main_app.destroy_user_session_path, :method => :delete) if current_user
 
       %form{action: "", method: "post", class: "sign-form"}
         / <i class="arrow-top"><i class="arrow-top"></i></i>
@@ -55,7 +55,7 @@
               About Us
           %li
             %a{href: "#"}
-              Get Involved ▾             
+              Get Involved ▾
             %ul
               %li
                 = link_to "For Restaurants", main_app.restaurants_path
