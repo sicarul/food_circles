@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
   include Validators
 
+  has_many :user_vouchers
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

@@ -44,19 +44,19 @@ class ApplicationController < ActionController::Base
     s = [('A'..'Z'),('0'..'9')].map{|i| i.to_a}.flatten
     (0..4).map{s[rand(s.length)]}.join.downcase
   end
-  
+
   def makeCall(v,r,minutes)
     return if r.called
-    
+
     r.called = true
     r.save
-    
+
     data = {
       :from => CALLER_ID,
       :to => v.phone,
       :url => BASE_URL + "/notification?r=#{r.id}&m=#{minutes}"
     }
-    
+
     begin
       client = Twilio::REST::Client.new(ACCOUNT_SID, ACCOUNT_TOKEN)
       client.account.calls.create data
@@ -65,7 +65,7 @@ class ApplicationController < ActionController::Base
       return
     end
   end
-  
+
   def notification
     @r = Reservation.find(params[:r])
     @minutes = params[:minutes]
@@ -73,10 +73,10 @@ class ApplicationController < ActionController::Base
     @r.save
     render :action => "notification.xml.builder", :layout => false
   end
-  
+
   def sendText(p, b)
     @twilio = Twilio::REST::Client.new(ACCOUNT_SID, ACCOUNT_TOKEN)
-    @account = @twilio.account 
+    @account = @twilio.account
     @account.sms.messages.create(:from => '+14422223663', :to => p, :body => b)
     #@twilio.account.sms.messages.delay.create(:from => "+14422223663", :to => p, :body => b)
   end
@@ -91,7 +91,7 @@ class ApplicationController < ActionController::Base
       return
     end
   end
-  
+
   private
 
   def mobile_device?
@@ -194,4 +194,3 @@ class ApplicationController < ActionController::Base
 
   helper_method :weekly_meal_goal, :total_week_payments, :total_payments, :weekly_progress, :percent
 end
-

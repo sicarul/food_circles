@@ -16,29 +16,6 @@ end
 
 module Foodcircles
 
-
-
-  class Engine < Rails::Engine
-    
-    def self.activate
-      Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
-        Rails.env.production? ? require(c) : load(c)
-      end
-      
-      # Register image overlays
-      # removing this temporarily, as it works only on Spree 0.70.x
-      # [ImageOverlay::Overlays::Image,
-      #  ImageOverlay::Overlays::Text
-      # ].each &:register
-
-    end
-
-    config.autoload_paths += %W(#{config.root}/lib)
-    config.to_prepare &method(:activate).to_proc
-
-  end
-
-
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -46,7 +23,7 @@ module Foodcircles
 
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
-    config.autoload_paths += %W(#{config.root}/app/models/validators)
+    config.autoload_paths += %W(#{config.root}/app/models/validators lib)
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.

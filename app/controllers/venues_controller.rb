@@ -24,8 +24,6 @@ class VenuesController < ApplicationController
       end
     end
 
-    
-
     if ['json','jsonp'].include?(params[:format])
       if (params[:offline])
         render :json => (lat(params[:lat]) ? @venues.as_json(:lat => params[:lat], :lon => params[:lon], :not_available => true) : @venues), :callback => params[:callback]
@@ -38,7 +36,7 @@ class VenuesController < ApplicationController
   def show
     # @v = Venue.find(params[:id])
     @offer = Venue.find(params[:id]).offers.first
-    
+
     if ['json','jsonp'].include?(params[:format])
         render :json => @v, :callback => params[:callback]
     end

@@ -13,15 +13,13 @@
           %a{class: "icon-soc-twitter", href: "https://twitter.com/#!/FoodCircles"}
           %a{class: "icon-soc-foodcircles", href: "http://blog.foodcircles.net"}
 
-      - if current_user
+      - if user_signed_in?
         .welcome-line
           Welcome Back!
-          = link_to "Your Account", edit_user_registration_path
+          = link_to("Your Account", main_app.edit_user_registration_path)
           %i{class: "arrow-right"}
-          / = link_to('Logout', main_app.destroy_user_session_path, :method => :delete) if current_user
 
       %form{action: "", method: "post", class: "sign-form"}
-        / <i class="arrow-top"><i class="arrow-top"></i></i>
         .row
           %a{href: "/users/auth/facebook", class: "btn-facebook"}
             Sign up
@@ -39,7 +37,7 @@
 
           %p{class: "form-caption"}
             Have an account?
-            - if current_user
+            - if user_signed_in?
               = link_to('Logout', main_app.destroy_user_session_path, :method => :delete)
             - else
               = link_to('Sign in', main_app.new_user_session_path)
@@ -69,7 +67,6 @@
                 = link_to "For Non-Profits", main_app.nonprofits_path
               %li
                 = link_to "Social Butterflies", main_app.socialbutterflies_path
-  / %li{:class => "#{ 'active' if controller_name == 'home' }"}
 
 .mini-header
   .mh-main
@@ -80,7 +77,7 @@
         meals donated to date
       .account
         %a{href: "#"}
-          My Account 
+          My Account
           %i{class: "arrow-right white"}
       %ul{class: "nav"}
         %li
