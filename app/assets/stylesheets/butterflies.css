@@ -4,23 +4,14 @@
 	text-align: center;
 	position: relative;
 	top: 180px;
-	 /* fallback */
-	  background-color: #4969ac;
-
-	  /* Safari 4-5, Chrome 1-9 */
-	  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4969ac), to(#344b7b));
-
-	  /* Safari 5.1, Chrome 10+ */
-	  background: -webkit-linear-gradient(top, #4969ac, #344b7b);
-
-	  /* Firefox 3.6+ */
-	  background: -moz-linear-gradient(top, #4969ac, #344b7b);
-
-	  /* IE 10 */
-	  background: -ms-linear-gradient(top, #4969ac, #344b7b);
-
-	  /* Opera 11.10+ */
-	  background: -o-linear-gradient(top, #4969ac, #344b7b);
+	background: #8998c3; /* Old browsers */
+background: -moz-linear-gradient(top,  #8998c3 0%, #8998c3 19%, #8998c3 87%, #515c7b 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8998c3), color-stop(19%,#8998c3), color-stop(87%,#8998c3), color-stop(100%,#515c7b)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #8998c3 0%,#8998c3 19%,#8998c3 87%,#515c7b 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #8998c3 0%,#8998c3 19%,#8998c3 87%,#515c7b 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #8998c3 0%,#8998c3 19%,#8998c3 87%,#515c7b 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #8998c3 0%,#8998c3 19%,#8998c3 87%,#515c7b 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8998c3', endColorstr='#515c7b',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -29,7 +20,7 @@
 	color: white;
 	text-shadow: 2px 2px #515c7b;
 	position: relative;
-	top: 6px;
+	top: 4px;
 	font-family: "museo-slab", sans-serif;
 }
 
@@ -38,47 +29,22 @@
 	margin-bottom: 100px;
 }
 
-.butterfly-steps {
-	width: 50%;
-}
-
-.butterfly-steps {
-	text-align: center;
-}
-
-.butterfly-steps h1 {
-	font-family: 'museo-slab', serif;
-	font-size: 24px;
-	color: #8a857f;
-	font-weight: 700;
-}
-
-.butterfly-steps p {
-	font-family: 'pragmatica web', serif;
-	font-size: 16px;
-	color: #8a857f;
-}
-
-.butterfly-steps img {
-	margin-top: 10px;
-}
-
 #butterfly-step1 {
 	margin-top: 30px;
 }
 
 #butterfly-step2 {
+	margin-top: 20px;
 	position: relative;
 	left: 500px;
 	width: 425px;
 }
 
 #butterfly-step3 {
+	margin-top: 50px;
 }
 
 #butterfly-submit {
-	position: relative;
-	top: 125px;
 	text-align: center;
 	display: block;
 	margin: 10px auto;
@@ -95,14 +61,12 @@
 }
 
 #butterfly-questions {
-	display: block;
 	text-align: center;
 	margin: 20px 0 100px 0;
 }
 
 #butterfly-faq {
-	position: relative;
-	top: 75px;
+	display: inline-block;
 }
 
 #butterfly-texting {
@@ -110,19 +74,23 @@
 }
 
 #butterfly-path1 {
-	position: absolute;
-	left: 200px;
+	display: inline-block;
+	position: relative;
+	top: 200px;
+	left: -150px;
 }
 
 #butterfly-path2 {
-	position: absolute;	
-	top: 680px;
-	left: 225px;
+	display: inline-block;
+	position: absolute;
+	right: 475px;
+	top: 220px;
+	
 }
 
 #butterfly-path3 {
-	position: absolute;
-	left: 300px;
+	position: relative;
+	left: 200px;
 }
 
 #butterfly-circle {
@@ -168,8 +136,6 @@
 
 	/* Opera 11.10+ */
 	background: -o-linear-gradient(top, #b46c6d, #a44b4c);
-
-	border: none;
 }
 
 #butterfly-form .submit-image:hover {
@@ -189,20 +155,4 @@
 	/* Opera 11.10+ */
 	background: -o-linear-gradient(top, #6c1b1b, #894242);
 
-}
-
-#butterfly-facebook {
-	color: #3b5998;
-}
-
-#butterfly-match {
-	color: #d19a03;
-}
-
-#butterfly-friends {
-	color: #a34a4b;
-}
-
-#superscript {
-	vertical-align: super;
 }

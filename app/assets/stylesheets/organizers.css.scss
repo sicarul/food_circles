@@ -1,3 +1,421 @@
-// Place all the styles related to the Organizers controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+	color: #4e3e34;
+}
+
+h2 {
+	color: #4e3e34;
+}
+
+.placard {
+	width: 100%;
+	background-color: white;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 40px;
+	-moz-box-shadow: 3px 3px 2px #d6cdbd;
+	-webkit-box-shadow: 3px 3px 2px #d6cdbd;
+	box-shadow: 3px 3px 2px #d6cdbd;
+	text-align: center;
+	display: block;
+	padding: 50px 0;
+	color: #4e3e34;
+	font-family: "museo-slab", serif;
+}
+
+.placard-body {
+	position: relative;
+	top: -70px;
+}
+
+.placard h1 {
+	font-size: 24px;
+	font-family: "museo-slab", serif;
+	font-weight: 700;
+	position: relative;
+	margin-bottom: 30px;
+	color: #999;
+}
+
+.placard h2 {
+	font-size: 20px;
+	color: #999;
+}
+
+.placard p {
+	font-family: "pragmatica-web", sans-serif;
+	color: #999;
+}
+
+.organizers-arrow {
+	position: relative;
+	
+	top: -50px;
+	left: 60px;
+}
+
+.image-alpha {
+	position: relative;
+	left: 30px;
+}
+
+.organizers-steps {
+	width: 150px;
+}
+
+.stringleft{
+	position: absolute;
+	top: 490px;
+	left: 100px;
+}
+
+.stringright{
+	position: absolute;
+	top: 490px;
+	left: 840px;
+}
+
+.stringleft-second{
+	position: absolute;
+	top: 890px;
+	left: 100px;
+}
+
+.stringright-second{
+	position: absolute;
+	top: 890px;
+	left: 840px;
+}
+
+.omega {
+	
+	margin-bottom: 100px;
+}
+
+.steps {
+	width: 90%;
+	margin: 10px auto;
+}
+
+.steps p {
+	width: 90%;
+	margin: 0 auto;
+	font-family: "pragmatica-web", sans-serif;
+}
+
+.steps h3 {
+	font-size: 20px;
+}
+
+.step1 {
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.step2 {
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.step3 {
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#needtoknow {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#jointhecause {
+	display: inline-block;
+}
+
+.alpha {
+	color: #999;
+}
+
+.beta {
+	color: #999;
+}
+
+.beta h1, .beta h2, .beta p {
+	color: #999;
+}
+
+.leadchar {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+
+#restaurant-invite {
+	margin-top: 30px;
+}
+
+#organizers {
+	text-align: left;
+	padding: 0 60px 0 60px;
+	margin-top: 40px;
+}
+
+#organizers h2 {
+	text-align: left;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 10px;
+	font-family: "museo-slab", serif;
+}
+
+#organizers p {
+	font-size: 16px;
+	font-weight: 200;
+	font-family: "pragmatica-web", sans-serif;
+}
+
+label {
+	margin: 10px;
+}
+
+#organizers input {
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "pragmatica-web", sans-serif;
+}
+
+#organizers-submit-button {
+	text-align: center;
+}
+
+#organizers .button {
+	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	width:150px;
+}
+
+/*------------------*/
+
+
+
+#organizers .button {
+	
+	text-decoration:none;
+	padding-top:13px;
+	padding-bottom:13px;
+	padding-left:24px;
+	padding-right:24px;
+	font-family: Helvetica Neue, Helvetica, Arial, Sans-serif;
+	font-weight:normal;
+	font-size:11pt;
+	color:#ffffff;
+	text-align:center;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+    -border-radius: 8px;
+	
+	text-shadow:0px 1px 1px rgb(112,26,26);
+}
+
+#organizers .button:link {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
+
+	background: #b56d6e; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #b56d6e 0%, #a34a4b 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b56d6e), color-stop(100%,#a34a4b)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #b56d6e 0%,#a34a4b 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b56d6e', endColorstr='#a34a4b',GradientType=0 ); /* IE6-9 */
+	
+}
+
+
+#organizers .button:hover {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
+
+	background: #c47b7b; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #c47b7b 0%, #b65c5d 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c47b7b), color-stop(100%,#b65c5d)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #c47b7b 0%,#b65c5d 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c47b7b', endColorstr='#b65c5d',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+#organizers .button:visited {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
+
+	background: #b56d6e; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #b56d6e 0%, #a34a4b 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b56d6e), color-stop(100%,#a34a4b)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #b56d6e 0%,#a34a4b 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b56d6e', endColorstr='#a34a4b',GradientType=0 ); /* IE6-9 */
+	
+
+	}
+
+#organizers .button:active {
+	
+	-moz-box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	-webkit-box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	
+	text-shadow:0px 1px 1px rgb(70,18,18);
+	
+	background: #6d1d1d; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #6d1d1d 0%, #c3797a 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1d1d), color-stop(100%,#c3797a)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #6d1d1d 0%,#c3797a 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d1d1d', endColorstr='#c3797a',GradientType=0 ); /* IE6-9 */
+
+	
+}
+
+
+.responses {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.responses p {
+	line-height: 30px;
+	color: #8a857f;
+}
+
+#menu-footer {
+	background: url("../img/footer-menu-background.png") no-repeat center;
+	height: 70px;
+	box-shadow: 
+        
+    0px -11px 18px -10px #CCC;
+
+}
+
+#menu-footer ul li {
+	list-style: none;
+	display: inline;
+	position: relative;
+	top: 25px;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+#footer p {
+	padding-top: 20px;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+#footer ul li {
+	list-style: none;
+	display: inline;
+}
+
+.footer-summary {
+	float: left;
+	text-align: left;
+	width: 300px;
+	padding: 0 10px;
+}
+
+.copyright {
+	display: inline-block;
+	float: left;
+	width: 300px;
+	text-align: center;
+	padding: 0 10px;
+}
+
+.copyright p {
+	vertical-align: middle;
+	line-height: 45px;
+	font-family: "Pragmatica Web", sans-serif;
+}
+
+.copyright img {
+	position: relative;
+	top: 3px;
+}
+
+.quicklinks {
+	float: left;
+	width: 300px;
+	padding: 0 10px;
+}
+
+.quicklinks a {
+	color: #999;
+}
+
+.quicklinks ul {
+	height: 40px;
+	line-height: 45px;
+}
+
+#quicklinks-social {
+	margin-bottom: 50px;
+
+}
+
+#quicklinks-links a {
+	font-size: 12px;
+}
+
+.answer {
+	font-weight: bold;
+}

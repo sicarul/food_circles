@@ -1,6 +1,12 @@
 #about {
 	background: url("../img/students-crowd.png") center bottom no-repeat;
 	background-size: 100%;
+	color: #4e3e34;
+	height: 3400px;
+}
+
+#about h2 {
+	color: #4e3e34;	
 }
 
 #students {
@@ -11,12 +17,17 @@
 #students-intro p {
 	text-align: center;
 	margin-top: 20px;
+	color: #4e3e34;
 }
 
 #students-photos {
 	display: block;
 	float: left;
 	width: 450px;
+}
+
+#students-photos img {
+	box-shadow: 2px 2px 2px #d6ccb3;
 }
 
 #students-steps {
@@ -26,6 +37,32 @@
 	padding-top: 50px;
 }
 
+.steps-title {
+	display: block;
+}
+
+.steps-title img {
+	float: left;
+}
+
+.steps-title h1 {
+	float: left;
+	font-size: 26px;
+	line-height: 26px;
+	font-family: "museo-slab", serif;
+	margin: 25px 0 0 10px;
+	font-weight: 700;
+}
+
+.one-line h1 {
+	margin-top: 42px;
+}
+
+.steps-paragraph {
+	display: block;
+	clear: both;
+}
+
 #students-steps img {
 	margin-bottom: 80px
 }
@@ -33,11 +70,13 @@
 #students-steps p {
 	margin-bottom: 120px;
 	line-height: 30px;
+	color: #4e3e34;
 }
 
 #students-form {
 	width: 600px;
-	margin: 200px auto;
+	margin: 0 auto;
+	margin-top: 270px;
 	color: white;
 }
 
@@ -65,6 +104,8 @@
 
 #crowd {
 	text-align: center;
+	position: relative;
+	top: -100px;
 }
 
 .menu-footer li {
@@ -84,7 +125,7 @@
 }
 
 .menu-footer {
-	margin-bottom: 30px;
+	margin: 150px 0 30px 0;
 }
 
 .copyright {
@@ -95,50 +136,142 @@
 	margin-bottom: 30px;
 }
 
-.hidden {
-	display: none;
+#hidden {
+	padding-top: 300px;
 }
 
-#students-form .submit-image {
-	margin: 10px 0 10px 0;
-	color: white;
-	font-size: 24px;
-	font-weight: 500;
-	width: 400px;
-	padding: 20px 0;
-	border-radius: 8px;
-	background-color: #b46c6d;
-	/* Safari 4-5, Chrome 1-9 */
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b46c6d), to(#a44b4c));
-
-	/* Safari 5.1, Chrome 10+ */
-	background: -webkit-linear-gradient(top, #b46c6d, #a44b4c);
-
-	/* Firefox 3.6+ */
-	background: -moz-linear-gradient(top, #b46c6d, #a44b4c);
-
-	/* IE 10 */
-	background: -ms-linear-gradient(top, #b46c6d, #a44b4c);
-
-	/* Opera 11.10+ */
-	background: -o-linear-gradient(top, #b46c6d, #a44b4c);
+#students-form .button {
+	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	width:400px;
 }
 
-#students-form .submit-image:hover {
-	background-color: #6c1b1b;
-	/* Safari 4-5, Chrome 1-9 */
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6c1b1b), to(#894242));
+/*------------------*/
 
-	/* Safari 5.1, Chrome 10+ */
-	background: -webkit-linear-gradient(top, #6c1b1b, #894242);
 
-	/* Firefox 3.6+ */
-	background: -moz-linear-gradient(top, #6c1b1b, #894242);
 
-	/* IE 10 */
-	background: -ms-linear-gradient(top, #6c1b1b, #894242);
+#students-form .button {
+	
+	text-decoration:none;
+	padding-top:13px;
+	padding-bottom:13px;
+	padding-left:24px;
+	padding-right:24px;
+	font-family: Helvetica Neue, Helvetica, Arial, Sans-serif;
+	font-weight:normal;
+	font-size:11pt;
+	color:#ffffff;
+	text-align:center;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+    -border-radius: 8px;
+	
+	text-shadow:0px 1px 1px rgb(112,26,26);
+}
 
-	/* Opera 11.10+ */
-	background: -o-linear-gradient(top, #6c1b1b, #894242);
+#students-form .button:link {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
 
+	background: #b56d6e; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #b56d6e 0%, #a34a4b 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b56d6e), color-stop(100%,#a34a4b)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #b56d6e 0%,#a34a4b 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b56d6e', endColorstr='#a34a4b',GradientType=0 ); /* IE6-9 */
+	
+}
+
+
+#students-form .button:hover {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
+
+	background: #c47b7b; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #c47b7b 0%, #b65c5d 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c47b7b), color-stop(100%,#b65c5d)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #c47b7b 0%,#b65c5d 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c47b7b', endColorstr='#b65c5d',GradientType=0 ); /* IE6-9 */
+
+
+}
+#students-form .button a:visited {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
+
+	background: #b56d6e; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #b56d6e 0%, #a34a4b 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b56d6e), color-stop(100%,#a34a4b)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #b56d6e 0%,#a34a4b 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b56d6e', endColorstr='#a34a4b',GradientType=0 ); /* IE6-9 */
+	
+
+	}
+#students-form .button:active {
+	
+	-moz-box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	-webkit-box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	
+	text-shadow:0px 1px 1px rgb(70,18,18);
+	
+	background: #6d1d1d; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #6d1d1d 0%, #c3797a 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1d1d), color-stop(100%,#c3797a)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #6d1d1d 0%,#c3797a 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d1d1d', endColorstr='#c3797a',GradientType=0 ); /* IE6-9 */
+
+	
+}
+
+#fine-print {
+	font-size: 12px;
 }

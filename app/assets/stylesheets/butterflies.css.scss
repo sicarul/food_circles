@@ -1,6 +1,66 @@
+#banner {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	position: relative;
+	top: 180px;
+	 /* fallback */
+	  background-color: #4969ac;
+
+	  /* Safari 4-5, Chrome 1-9 */
+	  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4969ac), to(#344b7b));
+
+	  /* Safari 5.1, Chrome 10+ */
+	  background: -webkit-linear-gradient(top, #4969ac, #344b7b);
+
+	  /* Firefox 3.6+ */
+	  background: -moz-linear-gradient(top, #4969ac, #344b7b);
+
+	  /* IE 10 */
+	  background: -ms-linear-gradient(top, #4969ac, #344b7b);
+
+	  /* Opera 11.10+ */
+	  background: -o-linear-gradient(top, #4969ac, #344b7b);
+
+}
+
+#banner h1 {
+	font-size: 25px;
+	color: white;
+	text-shadow: 2px 2px #515c7b;
+	position: relative;
+	top: 6px;
+	font-family: "museo-slab", sans-serif;
+}
+
 #butterfly-title {
 	text-align: center;
-	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.butterfly-steps {
+	width: 50%;
+}
+
+.butterfly-steps {
+	text-align: center;
+}
+
+.butterfly-steps h1 {
+	font-family: 'museo-slab', serif;
+	font-size: 24px;
+	color: #8a857f;
+	font-weight: 700;
+}
+
+.butterfly-steps p {
+	font-family: 'pragmatica web', serif;
+	font-size: 16px;
+	color: #8a857f;
+}
+
+.butterfly-steps img {
+	margin-top: 10px;
 }
 
 #butterfly-step1 {
@@ -8,29 +68,40 @@
 }
 
 #butterfly-step2 {
-	margin-top: 20px;
 	position: relative;
 	left: 500px;
+	width: 425px;
 }
 
 #butterfly-step3 {
-	margin-top: 50px;
 }
 
 #butterfly-submit {
+	position: relative;
+	top: 135px;
 	text-align: center;
 	display: block;
-	margin-top: 10px;
+	margin: 10px auto;
 	height: 220px;
+	width: 330px;
+}
+
+#butterfly-submit input {
+	width: 100%;
+	margin-top: 10px;
+	font-family: helvetica;
+	font-size: 14px;
+	line-height: 18px;
 }
 
 #butterfly-questions {
+	display: block;
 	text-align: center;
 	margin: 20px 0 100px 0;
 }
 
 #butterfly-faq {
-	display: inline-block;
+	position: relative;
 }
 
 #butterfly-texting {
@@ -38,27 +109,26 @@
 }
 
 #butterfly-path1 {
-	display: inline-block;
-	position: relative;
-	top: 200px;
-	left: -150px;
+	position: absolute;
+	left: 200px;
 }
 
 #butterfly-path2 {
-	display: inline-block;
-	position: relative;
-	right: 775px;
+	position: absolute;	
+	top: 680px;
+	left: 225px;
 }
 
 #butterfly-path3 {
-	position: relative;
-	left: 200px;
+	position: absolute;
+	left: 300px;
 }
 
 #butterfly-circle {
 	display: inline-block;
 	position: relative;
 	top: -180px;
+	left: -80px;
 	z-index: -1;
 }
 
@@ -66,6 +136,170 @@
 	margin-top: 10px;
 }
 
+#butterfly-questions {
+	position: relative;
+	margin-top: 120px;
+}
+
 #butterfly-questions h3 {
 	margin-bottom: 20px;
+	font-size: 20px;
+    font-family: "museo-slab", sans-serif;
+    color: #7e7e7e;
+    font-style: italic;
+}
+
+#butterfly-form {
+	position: relative;
+	top: -20px;
+}
+
+#butterfly-form .button {
+	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	width:350px;
+}
+
+/*------------------*/
+
+
+
+#butterfly-form .button {
+	
+	text-decoration:none;
+	padding-top:13px;
+	padding-bottom:13px;
+	padding-left:24px;
+	padding-right:24px;
+	font-family: Helvetica Neue, Helvetica, Arial, Sans-serif;
+	font-weight:normal;
+	font-size:11pt;
+	color:#ffffff;
+	text-align:center;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+    -border-radius: 8px;
+	
+	text-shadow:0px 1px 1px rgb(112,26,26);
+}
+
+#butterfly-form .button:link {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
+
+	background: #b56d6e; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #b56d6e 0%, #a34a4b 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b56d6e), color-stop(100%,#a34a4b)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #b56d6e 0%,#a34a4b 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b56d6e', endColorstr='#a34a4b',GradientType=0 ); /* IE6-9 */
+	
+}
+
+
+#butterfly-form .button:hover {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
+
+	background: #c47b7b; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #c47b7b 0%, #b65c5d 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c47b7b), color-stop(100%,#b65c5d)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #c47b7b 0%,#b65c5d 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #c47b7b 0%,#b65c5d 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c47b7b', endColorstr='#b65c5d',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+#butterfly-form .button:visited {
+	
+	-moz-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	-webkit-box-shadow:0px 2px 3px rgba(102,51,51,0.2);
+	box-shadow:0px 2px 3px rgba(102,51,51,0.2));
+
+	background: #b56d6e; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #b56d6e 0%, #a34a4b 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b56d6e), color-stop(100%,#a34a4b)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #b56d6e 0%,#a34a4b 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #b56d6e 0%,#a34a4b 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b56d6e', endColorstr='#a34a4b',GradientType=0 ); /* IE6-9 */
+	
+
+	}
+
+#butterfly-form .button:active {
+	
+	-moz-box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	-webkit-box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	box-shadow:inset 0px -3px 4px rgba(0,0,0,0.4);
+	
+	text-shadow:0px 1px 1px rgb(70,18,18);
+	
+	background: #6d1d1d; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #6d1d1d 0%, #c3797a 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6d1d1d), color-stop(100%,#c3797a)); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  #6d1d1d 0%,#c3797a 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  #6d1d1d 0%,#c3797a 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d1d1d', endColorstr='#c3797a',GradientType=0 ); /* IE6-9 */
+
+	
+}
+
+#butterfly-facebook {
+	color: #3b5998;
+}
+
+#butterfly-match {
+	color: #d19a03;
+}
+
+#butterfly-friends {
+	color: #a34a4b;
+}
+
+#superscript {
+	vertical-align: super;
 }

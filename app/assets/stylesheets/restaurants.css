@@ -1,0 +1,158 @@
+.placard {
+	width: 100%;
+	background-color: white;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-top: 50px;
+	-moz-box-shadow: 3px 3px 2px #d6cdbd;
+	-webkit-box-shadow: 3px 3px 2px #d6cdbd;
+	box-shadow: 3px 3px 2px #d6cdbd;
+	text-align: center;
+	display: block;
+	padding: 0 0 40px 0;
+	color: #4e3e34;
+	font-family: "museo-slab", serif;
+}
+
+.placard-heading {
+	font-size: 24px;
+	font-family: serif;
+	position: relative;
+	top: -80px;
+	margin-bottom: 30px;
+}
+
+.stringleft{
+	position: relative;
+	top: -80px;
+	padding-right: 750px;
+}
+
+.stringright{
+	position: relative;
+	top: -80px;
+}
+
+.omega {
+	margin-bottom: 100px;
+	padding-bottom: 0;
+}
+
+.steps {
+	width: 90%;
+	margin: 10px auto;
+	position: relative;
+	top: -80px;
+}
+
+.steps p {
+	width: 90%;
+	margin: 0 auto;
+	font-family: "pragmatica-web", sans-serif;
+	line-height: 30px;
+}
+
+.steps h3 {
+	font-size: 20px;
+}
+
+.step1 {
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.step2 {
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.step3 {
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#jointhecause {
+	display: inline-block;
+}
+
+.alpha {
+	position: relative;
+	top: 20px;
+}
+
+.bignumber {
+	font-size:200%;
+}
+
+#restaurant-invite {
+	margin-top: 30px;
+	display: inline-block;
+	font-family: "museo-slab", serif;
+	font-weight: 700;
+}
+
+#restaurant-invite input {
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: "pragmatica-web", sans-serif;
+}
+
+#restaurants-send {
+	position: relative;
+	top: -6px;
+}
+
+#restaurant-invite .submit-image {
+	margin: 10px 0 10px 0;
+	position: relative;
+	top: 2px;
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+	padding: 10px 30px;
+	border-radius: 8px;
+	background-color: #b46c6d;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b46c6d), to(#a44b4c));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #b46c6d, #a44b4c);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #b46c6d, #a44b4c);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #b46c6d, #a44b4c);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #b46c6d, #a44b4c);
+}
+
+#restaurant-invite .submit-image:hover {
+	background-color: #6c1b1b;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6c1b1b), to(#894242));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #6c1b1b, #894242);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #6c1b1b, #894242);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #6c1b1b, #894242);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #6c1b1b, #894242);
+
+}
+
+.restaurant-numbers {
+	margin-right: 8px;
+	position: relative;
+	top: 5px;
+}
